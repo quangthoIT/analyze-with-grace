@@ -64,7 +64,7 @@ const FooterContact = () => {
           </motion.div>
         </div>
 
-        <div className="mt-20 pt-8 border-t border-border text-center">
+        <div className="mt-40 pt-8 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">© 2026 Cao Nhu Quynh · Designed with analytical precision</p>
         </div>
       </div>
