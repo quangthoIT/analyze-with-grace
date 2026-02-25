@@ -2,19 +2,19 @@ import { motion } from "framer-motion";
 import { LayoutGrid, FileText, Figma, Database, Workflow, BarChart3, PenTool, Sparkles, Table2 } from "lucide-react";
 
 const toolsRow1 = [
-  { name: "StarUML", icon: PenTool },
-  { name: "Draw.io", icon: Workflow },
-  { name: "Lucidchart", icon: LayoutGrid },
-  { name: "Figma", icon: Figma },
-  { name: "BPMN / UML", icon: FileText },
+  { name: "StarUML", icon: PenTool, color: "#E74C3C" },
+  { name: "Draw.io", icon: Workflow, color: "#F08705" },
+  { name: "Lucidchart", icon: LayoutGrid, color: "#F5A623" },
+  { name: "Figma", icon: Figma, color: "#A259FF" },
+  { name: "BPMN / UML", icon: FileText, color: "#3498DB" },
 ];
 
 const toolsRow2 = [
-  { name: "SQL Server", icon: Database },
-  { name: "PostgreSQL", icon: Database },
-  { name: "Excel", icon: Table2 },
-  { name: "AI Tools", icon: Sparkles },
-  { name: "REST API", icon: BarChart3 },
+  { name: "SQL Server", icon: Database, color: "#CC2927" },
+  { name: "PostgreSQL", icon: Database, color: "#336791" },
+  { name: "Excel", icon: Table2, color: "#217346" },
+  { name: "AI Tools", icon: Sparkles, color: "#8B5CF6" },
+  { name: "REST API", icon: BarChart3, color: "#10B981" },
 ];
 
 const TechStack = () => {
@@ -48,7 +48,7 @@ const TechStack = () => {
               key={`${tool.name}-${i}`}
               className="flex-shrink-0 mx-6 glass-card rounded-2xl px-10 py-8 flex flex-col items-center gap-4 min-w-[160px] hover:glow-primary transition-all duration-300"
             >
-              <tool.icon className="w-8 h-8 text-primary" />
+              <tool.icon className="w-8 h-8" style={{ color: tool.color }} />
               <span className="text-sm font-medium text-foreground whitespace-nowrap">{tool.name}</span>
             </div>
           ))}
@@ -65,7 +65,7 @@ const TechStack = () => {
               key={`${tool.name}-${i}`}
               className="flex-shrink-0 mx-6 glass-card rounded-2xl px-10 py-8 flex flex-col items-center gap-4 min-w-[160px] hover:glow-primary transition-all duration-300"
             >
-              <tool.icon className="w-8 h-8 text-primary" />
+              <tool.icon className="w-8 h-8" style={{ color: tool.color }} />
               <span className="text-sm font-medium text-foreground whitespace-nowrap">{tool.name}</span>
             </div>
           ))}
