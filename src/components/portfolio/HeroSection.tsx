@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Download, ArrowDown } from "lucide-react";
+import { Download } from "lucide-react";
 
 const roles = ["Requirement Architect", "Process Analyst", "Technical Bridge Builder"];
 
@@ -40,8 +40,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-6"
-        >
+          className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-6">
+
           Business Analyst Portfolio
         </motion.p>
 
@@ -49,8 +49,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
-        >
+          className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
+
           <span className="block text-foreground">Cao Nhu Quynh</span>
         </motion.h1>
 
@@ -58,8 +58,8 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="h-12 sm:h-14 flex items-center justify-center mb-10"
-        >
+          className="h-12 sm:h-14 flex items-center justify-center mb-10">
+
           <span className="font-heading text-2xl sm:text-3xl md:text-4xl italic gradient-text">
             {displayedText}
           </span>
@@ -70,8 +70,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="max-w-xl mx-auto text-muted-foreground text-base sm:text-lg mb-12 leading-relaxed font-body"
-        >
+          className="max-w-xl mx-auto text-muted-foreground text-base sm:text-lg mb-12 leading-relaxed font-body">
+
           Business Analyst with practical experience in enterprise system implementation. 
           Strong in requirements analysis, process modeling, and functional documentation 
           for POS, CRM, and financial management solutions.
@@ -81,19 +81,19 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.0 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
           <a
             href="#projects"
-            className="glass-card glow-primary px-8 py-3.5 rounded-full font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer"
-          >
+            className="glass-card glow-primary px-8 py-3.5 rounded-full font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer">
+
             <Download className="inline-block w-4 h-4 mr-2 -mt-0.5" />
             Download Case Study
           </a>
           <a
             href="#value"
-            className="px-8 py-3.5 rounded-full font-medium text-muted-foreground border border-border hover:border-primary hover:text-primary transition-all duration-300"
-          >
+            className="px-8 py-3.5 rounded-full font-medium text-muted-foreground border border-border hover:border-primary hover:text-primary transition-all duration-300">
+
             Explore My Work
           </a>
         </motion.div>
@@ -102,13 +102,13 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <ArrowDown className="w-5 h-5 text-muted-foreground animate-bounce" />
+          className="absolute bottom-8 left-1/2 -translate-x-1/2">
+
+          
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
