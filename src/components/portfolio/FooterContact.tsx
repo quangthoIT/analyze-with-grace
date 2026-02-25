@@ -28,13 +28,17 @@ const FooterContact = () => {
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/quynhcao30049548/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:glow-primary transition-all duration-300 group"
             >
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a
-              href="#"
+              href="https://github.com/NhuQuynh9548"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:glow-primary transition-all duration-300 group"
             >
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
