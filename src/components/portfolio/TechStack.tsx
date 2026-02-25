@@ -1,21 +1,25 @@
 import { motion } from "framer-motion";
 import { LayoutGrid, FileText, Figma, Database, Workflow, BarChart3, PenTool, Sparkles, Table2 } from "lucide-react";
 
-const tools = [
+const toolsRow1 = [
   { name: "StarUML", icon: PenTool },
   { name: "Draw.io", icon: Workflow },
   { name: "Lucidchart", icon: LayoutGrid },
   { name: "Figma", icon: Figma },
+  { name: "BPMN / UML", icon: FileText },
+];
+
+const toolsRow2 = [
   { name: "SQL Server", icon: Database },
   { name: "PostgreSQL", icon: Database },
   { name: "Excel", icon: Table2 },
   { name: "AI Tools", icon: Sparkles },
-  { name: "BPMN / UML", icon: FileText },
   { name: "REST API", icon: BarChart3 },
 ];
 
 const TechStack = () => {
-  const doubled = [...tools, ...tools];
+  const doubled1 = [...toolsRow1, ...toolsRow1];
+  const doubled2 = [...toolsRow2, ...toolsRow2];
 
   return (
     <section className="py-24 sm:py-32 gradient-subtle overflow-hidden">
@@ -34,12 +38,29 @@ const TechStack = () => {
         </motion.div>
       </div>
 
-      {/* Marquee */}
-      <div className="relative">
+      {/* Row 1 - Right to Left */}
+      <div className="relative mb-6">
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
         <div className="flex marquee">
-          {doubled.map((tool, i) => (
+          {doubled1.map((tool, i) => (
+            <div
+              key={`${tool.name}-${i}`}
+              className="flex-shrink-0 mx-6 glass-card rounded-2xl px-10 py-8 flex flex-col items-center gap-4 min-w-[160px] hover:glow-primary transition-all duration-300"
+            >
+              <tool.icon className="w-8 h-8 text-primary" />
+              <span className="text-sm font-medium text-foreground whitespace-nowrap">{tool.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Row 2 - Left to Right */}
+      <div className="relative">
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
+        <div className="flex marquee-reverse">
+          {doubled2.map((tool, i) => (
             <div
               key={`${tool.name}-${i}`}
               className="flex-shrink-0 mx-6 glass-card rounded-2xl px-10 py-8 flex flex-col items-center gap-4 min-w-[160px] hover:glow-primary transition-all duration-300"
