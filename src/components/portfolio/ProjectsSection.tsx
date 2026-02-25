@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Enterprise Cash Flow Management System",
     domain: "Financial Management · Go-Live",
-    link: "https://github.com/NhuQuynh9548",
+    link: "https://github.com/NhuQuynh9548/Finance-BlueBolt.git",
     problem: "Enterprise lacked a unified system for managing income and expenses, leading to fragmented financial tracking across departments.",
     solution: "Led business requirement analysis. Created BRD, FRD, user stories, acceptance criteria, and system flow diagrams. Worked closely with developers during implementation.",
     impact: "Successfully deployed system to production. Supported enhancement phase and ensured scalable financial management for the organization.",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "POS - CRM System",
     domain: "Retail & Inventory · Graduation Project",
-    link: "https://github.com/NhuQuynh9548",
+    link: "https://github.com/NhuQuynh9548/KLTN-Lospec.git",
     problem: "No integrated solution for point-of-sale, customer relationship management, and inventory tracking, causing data silos and operational inefficiency.",
     solution: "Analyzed and documented requirements for POS, CRM, and inventory modules. Designed system workflows and database structure. Supported frontend–backend alignment and API specifications.",
     impact: "Delivered a fully functional system with optimized workflows. Assisted in testing and system optimization for reliable performance.",
