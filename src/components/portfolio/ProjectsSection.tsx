@@ -4,28 +4,20 @@ import { ArrowUpRight, Target, Lightbulb, TrendingUp } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Checkout Optimization",
-    domain: "Retail & E-Commerce",
-    problem: "Cart abandonment rate of 68% due to a convoluted 5-step checkout process with unclear error handling.",
-    solution: "Conducted user journey mapping and stakeholder interviews. Designed a streamlined 2-step checkout flow with inline validation and progress indicators.",
-    impact: "Reduced cart abandonment by 34% and increased conversion rate by 22% within the first quarter.",
-    tags: ["User Journey Mapping", "Wireframing", "A/B Testing"],
+    title: "Enterprise Cash Flow Management System",
+    domain: "Financial Management · Go-Live",
+    problem: "Enterprise lacked a unified system for managing income and expenses, leading to fragmented financial tracking across departments.",
+    solution: "Led business requirement analysis. Created BRD, FRD, user stories, acceptance criteria, and system flow diagrams. Worked closely with developers during implementation.",
+    impact: "Successfully deployed system to production. Supported enhancement phase and ensured scalable financial management for the organization.",
+    tags: ["BRD", "FRD", "User Stories", "System Flows"],
   },
   {
-    title: "HR Onboarding Process Automation",
-    domain: "Human Resources",
-    problem: "Manual onboarding taking 12 days average with 40+ documents and 6 departments involved, leading to poor new-hire experience.",
-    solution: "Mapped the AS-IS process using BPMN, identified redundancies, and designed a TO-BE workflow with automated document routing and digital signatures.",
-    impact: "Cut onboarding time to 3 days and improved new-hire satisfaction scores by 45%.",
-    tags: ["BPMN", "Process Mapping", "Requirements Doc"],
-  },
-  {
-    title: "Customer Insights Dashboard",
-    domain: "Data Analytics",
-    problem: "Stakeholders relied on static monthly reports, causing delayed decision-making and missed market trends.",
-    solution: "Gathered requirements from 8 stakeholders, defined KPIs, and created interactive Power BI dashboards with real-time data connections.",
-    impact: "Enabled real-time decision making, reducing report generation time by 80% and improving data accessibility for 50+ users.",
-    tags: ["Power BI", "SQL", "Stakeholder Analysis"],
+    title: "POS - CRM System",
+    domain: "Retail & Inventory · Graduation Project",
+    problem: "No integrated solution for point-of-sale, customer relationship management, and inventory tracking, causing data silos and operational inefficiency.",
+    solution: "Analyzed and documented requirements for POS, CRM, and inventory modules. Designed system workflows and database structure. Supported frontend–backend alignment and API specifications.",
+    impact: "Delivered a fully functional system with optimized workflows. Assisted in testing and system optimization for reliable performance.",
+    tags: ["Process Mapping", "Database Design", "API Specs"],
   },
 ];
 
@@ -48,7 +40,7 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}

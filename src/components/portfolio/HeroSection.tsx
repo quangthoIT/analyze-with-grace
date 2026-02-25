@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Download, ArrowDown } from "lucide-react";
 
-const roles = ["Strategic Thinker", "Requirement Architect", "User Experience Advocate"];
+const roles = ["Requirement Architect", "Process Analyst", "Technical Bridge Builder"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -51,7 +51,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
         >
-          <span className="block text-foreground">Priya Sharma</span>
+          <span className="block text-foreground">Cao Nhu Quynh</span>
         </motion.h1>
 
         <motion.div
@@ -72,8 +72,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="max-w-xl mx-auto text-muted-foreground text-base sm:text-lg mb-12 leading-relaxed font-body"
         >
-          Bridging the gap between business needs and technology solutions through
-          structured analysis, stakeholder empathy, and data-driven insights.
+          Business Analyst with practical experience in enterprise system implementation. 
+          Strong in requirements analysis, process modeling, and functional documentation 
+          for POS, CRM, and financial management solutions.
         </motion.p>
 
         <motion.div

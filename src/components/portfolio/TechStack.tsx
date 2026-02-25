@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
-import { LayoutGrid, FileText, Figma, Database, Workflow, BarChart3 } from "lucide-react";
+import { LayoutGrid, FileText, Figma, Database, Workflow, BarChart3, PenTool, Sparkles, Table2 } from "lucide-react";
 
 const tools = [
-  { name: "Jira", icon: LayoutGrid },
-  { name: "Confluence", icon: FileText },
+  { name: "StarUML", icon: PenTool },
+  { name: "Draw.io", icon: Workflow },
+  { name: "Lucidchart", icon: LayoutGrid },
   { name: "Figma", icon: Figma },
-  { name: "SQL", icon: Database },
-  { name: "BPMN / UML", icon: Workflow },
-  { name: "Power BI", icon: BarChart3 },
+  { name: "SQL Server", icon: Database },
+  { name: "PostgreSQL", icon: Database },
+  { name: "Excel", icon: Table2 },
+  { name: "AI Tools", icon: Sparkles },
+  { name: "BPMN / UML", icon: FileText },
+  { name: "REST API", icon: BarChart3 },
 ];
 
 const TechStack = () => {
