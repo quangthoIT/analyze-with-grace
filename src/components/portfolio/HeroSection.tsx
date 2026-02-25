@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import avatarImg from "@/assets/Avatar.png";
 
 const roles = ["Requirement Architect", "Process Analyst", "Technical Bridge Builder"];
 
@@ -37,21 +36,6 @@ const HeroSection = () => {
       <div className="absolute bottom-32 left-1/4 w-96 h-96 rounded-full bg-rose-light opacity-40 blur-3xl" />
 
       <div className="container relative z-10 px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8 flex justify-center"
-        >
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full p-1 bg-gradient-to-br from-primary via-accent to-primary animate-[spin_6s_linear_infinite]">
-            <img
-              src={avatarImg}
-              alt="Cao Nhu Quynh avatar"
-              className="w-full h-full rounded-full object-cover bg-background"
-            />
-          </div>
-        </motion.div>
-
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
