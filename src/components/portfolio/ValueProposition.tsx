@@ -5,17 +5,17 @@ const strengths = [
   {
     icon: BrainCircuit,
     title: "Analytical Mindset",
-    description: "Deconstructing complex problems into actionable requirements with structured frameworks and critical thinking.",
+    description: "Strong in requirements analysis, process modeling, and functional documentation. Detail-oriented approach to building scalable business systems.",
   },
   {
     icon: MessageCircle,
     title: "Effective Communication",
-    description: "Translating technical jargon into stakeholder-friendly language, ensuring alignment across all project phases.",
+    description: "Bridging technical and business teams through clear documentation — BRD, FRD, user stories, and workflow diagrams.",
   },
   {
     icon: Cable,
     title: "Technical Bridge",
-    description: "Connecting business objectives with development teams through clear documentation, wireframes, and process flows.",
+    description: "Connecting business objectives with development through system flow design, API specifications, and database structure planning.",
   },
 ];
 

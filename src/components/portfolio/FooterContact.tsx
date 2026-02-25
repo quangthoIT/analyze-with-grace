@@ -22,7 +22,7 @@ const FooterContact = () => {
 
           <div className="flex justify-center gap-6">
             <a
-              href="mailto:priya.sharma@email.com"
+              href="mailto:caonhuquynhwl@gmail.com"
               className="w-12 h-12 rounded-full glass-card flex items-center justify-center hover:glow-primary transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -44,7 +44,7 @@ const FooterContact = () => {
 
         <div className="mt-20 pt-8 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
-            © 2025 Priya Sharma · Designed with analytical precision
+            © 2026 Cao Nhu Quynh · Designed with analytical precision
           </p>
         </div>
       </div>

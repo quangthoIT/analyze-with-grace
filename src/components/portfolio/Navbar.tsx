@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container px-6 flex items-center justify-between h-16">
         <a href="#" className="font-heading text-xl font-bold text-foreground">
-          PS<span className="gradient-text">.</span>
+          CNQ<span className="gradient-text">.</span>
         </a>
 
         {/* Desktop */}
