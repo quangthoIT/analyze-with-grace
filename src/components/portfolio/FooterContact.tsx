@@ -4,7 +4,7 @@ import avatarImg from "@/assets/avatar.png";
 
 const FooterContact = () => {
   return (
-    <section id="contact" className="my-8 py-16 bg-background">
+    <section id="contact" className="mt-8 py-16 bg-background">
       <div className="container px-6">
         <div className="flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
           {/* Left column - 60% */}
